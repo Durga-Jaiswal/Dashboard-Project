@@ -86,7 +86,7 @@ const UsersByCompanyChart = ({ users }: UsersByCompanyChartProps) => {
               name="Number of Users"
               radius={[4, 4, 0, 0]}
             >
-              {chartData.map((entry, index) => (
+              {chartData.map((_, index) => (
                 <Cell
                   key={`cell-${index}`}
                   fill={COLORS[index % COLORS.length]}

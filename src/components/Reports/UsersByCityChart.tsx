@@ -60,7 +60,7 @@ const UsersByCityChart = ({ users }: UsersByCityChartProps) => {
               }
               labelLine={false}
             >
-              {chartData.map((entry, index) => (
+              {chartData.map((_, index) => (
                 <Cell
                   key={`cell-${index}`}
                   fill={COLORS[index % COLORS.length]}
@@ -73,8 +73,8 @@ const UsersByCityChart = ({ users }: UsersByCityChartProps) => {
               wrapperStyle={{ fontSize: '12px', paddingTop: '10px' }}
             />
             <Tooltip
-              formatter={(value, name, props) => [
-                `${props.payload.name}: ${value} user${Number(value) > 1 ? 's' : ''}`,
+              formatter={(value, _, props) => [
+                `${props?.payload?.name}: ${value} user${Number(value) > 1 ? 's' : ''}`,
                 'Count'
               ]}
             />
