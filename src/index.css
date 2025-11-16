@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+.react-countup {
+  transition: all 0.4s ease-in;
+}
+
+.bg-white:hover .react-countup {
+  transform: scale(1.05);
+  display: inline-block;
+}
+
+@layer components {
+  .chart-container {
+    min-height: 400px;
+  }
+  
+  @media (min-width: 1024px) {
+    .chart-container {
+      height: calc(100vh - 200px);
+    }
+  }
+}
+
+.recharts-wrapper {
+  min-width: 100%;
+}
+
+.recharts-surface {
+  overflow: visible;
+}
+
+.recharts-tooltip-wrapper {
+  font-size: 14px;
+  max-width: 200px;
+  word-wrap: break-word;
+}
+
+.chart-container {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.recharts-legend-wrapper {
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+/* Chart containers */
+.chart-container {
+  width: 100%;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+/* Adjust chart legends and tooltips */
+.recharts-legend-wrapper {
+  bottom: 0 !important;
+  width: 100% !important;
+  padding: 0 10px !important;
+}
+
+.recharts-legend-item {
+  font-size: 12px !important;
+  margin-right: 10px !important;
+}
+
+.recharts-tooltip-wrapper {
+  font-size: 12px !important;
+  pointer-events: auto !important;
+}
+
+@media (max-width: 640px) {
+  .recharts-legend-wrapper {
+    position: relative !important;
+    margin-top: 10px;
+  }
+  
+  .recharts-legend-item {
+    display: inline-block !important;
+    margin: 2px 8px !important;
+  }
+  
+  .recharts-tooltip-wrapper {
+    transform: translate(-50%, 0) !important;
+    left: 50% !important;
+    right: auto !important;
+  }
+}
