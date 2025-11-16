@@ -1,73 +1,51 @@
-# React + TypeScript + Vite
+🚀 Dashboard Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive admin dashboard built using Vite, React, TypeScript, and TailwindCSS, deployed on Vercel.
 
-Currently, two official plugins are available:
+📌 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📊 Responsive dashboard layout
 
-## React Compiler
+📁 Sidebar navigation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔍 Search & filtering
 
-## Expanding the ESLint configuration
+📄 Paginated table
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+📈 Chart visualizations (Recharts)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+🌐 Fetching data from a public API
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+📱 Fully mobile-responsive
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+⚡ Fast dev environment with Vite
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+☁️ Easily deployable to Vercel
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+🛠️ Tech Stack
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+React.js (with TypeScript)
+
+Vite (for blazing fast development)
+
+TailwindCSS (utility-first styling)
+
+Recharts (charts & graphs)
+
+Vercel (deployment)
+
+📦 Installation & Setup
+1. Clone the repository
+git clone https://github.com/<your-username>/<your-repo>.git
+cd <your-repo>
+
+2. Install dependencies
+npm install
+
+3. Start the development server
+npm run dev
+
+
+This will start Vite on:
+
+http://localhost:5173/
